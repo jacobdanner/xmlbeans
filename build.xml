@@ -170,7 +170,7 @@
 
     <target name="xcresolver.zip" depends="check.xcresolver.zip, dirs" unless="xcresolver.zip.exists">
         <get dest="external/lib/xcresolver.zip"
-            src="http://www.apache.org/dist/xml/commons/binaries/xml-commons-resolver-1.1.zip"
+          src="http://www.apache.org/dist/xerces/xml-commons/binaries/xml-commons-resolver-1.2.zip"
             verbose="true" usetimestamp="true" ignoreerrors="true"/>
     </target>
 
@@ -186,8 +186,8 @@
                 <include name="*/resolver.jar"/>
             </patternset>
         </unzip>
-        <copy file="external/lib/xml-commons-resolver-1.1/resolver.jar" tofile="build/lib/resolver.jar"/>
-        <delete dir="external/lib/xml-commons-resolver-1.1"/>
+        <copy file="external/lib/xml-commons-resolver-1.2/resolver.jar" tofile="build/lib/resolver.jar"/>
+        <delete dir="external/lib/xml-commons-resolver-1.2"/>
     </target>
 
 
